@@ -2,21 +2,28 @@ class Food {
     constructor(){ 
         this.foodStock=0; 
         this.lastFed;
-         this.image=loadImage('Images/Milk.png'); }
+         this.image=loadImage('Images/Milk.png'); 
+        }
           updateFoodStock(foodStock){ 
-              this.foodStock=foodStock; } 
+              this.foodStock=foodStock; 
+            } 
               getFedTime(lastFed){ 
-                  this.lastFed=lastFed; }
+                  this.lastFed=lastFed; 
+                }
+                getFoodStock(){
+                    return this.foodStock
+
+                }
 
 
-}
+
 display() {
-  var x=80; y=100;
+  var x=80, y=100;
   imageMode(CENTER);
   image(this.image,720,220,70,70);
 
   if(this.foodStock!=0){
-      for(vari=0;i<this.foodStock;i++){
+      for(var i=0;i<this.foodStock;i++){
           if(i%10==0){
               x=80;
               y=y+50
@@ -27,7 +34,7 @@ display() {
   }
 }
 
-
+}
 
 
 

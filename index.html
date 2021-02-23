@@ -8,16 +8,25 @@
     <script src="Food.js"></script>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
 <script>
   // Your web app's Firebase configuration
-
+  var firebaseConfig = {
+    apiKey: "AIzaSyDv6z5rGWtAVejzl16G6rpMBuoI7m1WfHE",
+    authDomain: "project-36-2531c.firebaseapp.com",
+    databaseURL: "https://project-36-2531c-default-rtdb.firebaseio.com",
+    projectId: "project-36-2531c",
+    storageBucket: "project-36-2531c.appspot.com",
+    messagingSenderId: "827975324967",
+    appId: "1:827975324967:web:da706b8c480fe0606e4502"
+  };
   // Initialize Firebase
-
-
+  firebase.initializeApp(firebaseConfig);
 </script>
 
     <link rel="stylesheet" type="text/css" href="style.css"/>
